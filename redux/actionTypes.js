@@ -1,0 +1,9 @@
+/**
+ * This file defines all the expected action types.
+ */
+
+export const QUERY_CHANGED = "QUERY_CHANGED"
+export const SEARCHING_QUERY = "SEARCHING_QUERY"
+export const SEARCHING_QUERY_SUCCESS = "SEARCHING_QUERY_SUCCESS"
+export const LOADING_BOOK_DETAILS = "LOADING_BOOK_DETAILS"
+export const LOADING_BOOK_DETAILS_SUCCESS = "LOADING_BOOK_DETAILS"

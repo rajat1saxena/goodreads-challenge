@@ -1,0 +1,8 @@
+# Node modules
+node_modules
+
+# Next.js cached files
+.next
+
+# Codenvy.io editor files
+.che
