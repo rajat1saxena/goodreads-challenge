@@ -7,21 +7,32 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "test": "jest"
+    "export": "next export",
+    "test": "jest",
+    "lint": "eslint components lib pages",
+    "deploy": "build && export "
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
     "next": "^8.0.3",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-redux": "^6.0.1",
-    "redux": "^4.0.1"
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "xml-js": "^1.6.11"
   },
   "devDependencies": {
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
+    "eslint": "^5.15.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-standard": "^4.0.0",
     "jest": "^24.3.1",
     "preact": "^8.4.2",
     "react-testing-library": "^6.0.0"

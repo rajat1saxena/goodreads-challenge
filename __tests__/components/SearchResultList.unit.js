@@ -1,13 +1,33 @@
 import React from 'react'
 import {render, fireEvent, cleanup} from 'react-testing-library'
 import SearchResultList from '../../components/SearchResultList.js'
+import BookItem from '../../lib/BookItem.js'
 
 // unmounts and cleans up DOM after testing
 afterEach(cleanup)
 
-it('When search is underway', () => {
-    const component = render(
-        <SearchResultList />
+it('Should show searching when search is underway', () => {
+    const { getByText } = render(
+        <SearchResultList loading={true}/>
     )
-    console.log(component)
+    expect(getByText(/searching/i)).toBeTruthy()
+})
+
+it('Should show custom message when list is empty', () => {
+  const { getByText } = render(
+      <SearchResultList 
+        loading={false} 
+        searchResultItems={[]}/>
+  )
+  expect(getByText(/Nothing/i)).toBeTruthy()
+})
+
+it('Should show SearchResultItem when list is empty', () => {
+  const { getByText } = render(
+      <SearchResultList 
+        loading={false} 
+        searchResultItems={[ new BookItem('My title', 'Me', 4) ]}/>
+  )
+  expect(getByText(/My title/i)).toBeTruthy()
+  expect(getByText(/Me/i)).toBeTruthy()
 })
