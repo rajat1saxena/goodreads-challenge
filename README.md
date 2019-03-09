@@ -6,12 +6,13 @@ I created the following wireframe to decide on the key features of the prospecti
 ![](mockup.png)
 
 ### SETUP
-1. The project is based upon `Next.js`.
+1. The project is based on `Next.js`.
 2. The project follows `styled-css` methodology for styling, due to Next.js.
 3. All the major React components can be found under `components` folder.
-4. For state management, the project uses Redux. 
+4. For state management, the project uses `Redux`. 
 5. All state management and data fetching logic can be found under `redux` folder.
-6. The production site is hosted on Heroku. Check it out.
+6. The UI is built using CSS3 Flexbox.
+7. The production site is hosted on Heroku. [Check it out](https://goodread-challenge.herokuapp.com/).
 
 ### RUNNING AND DEBUGGING
 1. To start the development server
@@ -43,3 +44,5 @@ npm run lint -- --fix
 - UI/UX Side:
   - As of now, an in-transition search cannot be cancelled, would like to make it cancellable.
   - Under the `Description` section, the app renders CDATA, instead of plain text. It could be handled appropriately.
+  - To make it more responsive for smaller screens.
+  - The Book list can be made to scroll, so as to fit the overflowing UI into the viewport.
