@@ -10,7 +10,7 @@
     "export": "next export",
     "test": "jest",
     "lint": "eslint components lib pages",
-    "deploy": "build && export "
+    "deploy": "git subtree push --prefix out heroku master"
   },
   "keywords": [],
   "author": "",
