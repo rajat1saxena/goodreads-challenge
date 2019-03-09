@@ -1,4 +1,4 @@
-###
+### INTRODUCTION
 A React app which can be used to see the detailed information about books from GoodReads.com.
 
 ### MOCKUP
@@ -37,8 +37,8 @@ npm run lint -- --fix
 
 ### FUTURE IMPROVEMENTS
 - Development Side:
-  - Use something `Flow` or `React.propTypes` to follow strict typing.
-  - Constants like developer keys etc., can be stored and loaded with something like `dot-env`.
+  - Use something like `Flow` or `React.propTypes` for strict typing.
+  - Constants like developer keys etc., can be stored and loaded with libraries like `dot-env`.
   - Ensure consistent `BEM` based naming convention for CSS classes.
 
 - UI/UX Side:

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render correctly 1`] = `
+<div
+  className="jsx-4012630625 container"
+>
+  <input
+    className="jsx-4012630625"
+    onChange={[Function]}
+    placeholder="Search GoodReads.com books"
+    type="text"
+  />
+  <button
+    className="jsx-4012630625"
+    data-testid="submit"
+    type="submit"
+  >
+    Search
+  </button>
+</div>
+`;

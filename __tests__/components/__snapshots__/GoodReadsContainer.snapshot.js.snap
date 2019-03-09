@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render correctly 1`] = `
+<div
+  className="jsx-3615494824 GoodReadsContainer"
+>
+  <div
+    className="jsx-2760136266 SearchArea"
+  >
+    <div
+      className="jsx-4012630625 container"
+    >
+      <input
+        className="jsx-4012630625"
+        onChange={[Function]}
+        placeholder="Search GoodReads.com books"
+        type="text"
+        value=""
+      />
+      <button
+        className="jsx-4012630625"
+        data-testid="submit"
+        onClick={[Function]}
+        type="submit"
+      >
+        Search
+      </button>
+    </div>
+    <div
+      className="jsx-1729626677"
+    >
+      <div
+        className="jsx-1729626677 Message"
+      >
+        Nothing to show here.
+      </div>
+    </div>
+  </div>
+  <div
+    className="jsx-4043294663 HeroArea"
+  >
+    <div
+      className="jsx-4043294663 Message"
+    >
+      Click on a book to see details.
+    </div>
+  </div>
+</div>
+`;

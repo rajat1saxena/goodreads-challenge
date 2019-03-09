@@ -1,5 +1,5 @@
 import React from 'react'
-import {render, fireEvent, cleanup} from 'react-testing-library'
+import { render, cleanup } from 'react-testing-library'
 import SearchResultList from '../../components/SearchResultList.js'
 import BookItem from '../../lib/BookItem.js'
 
@@ -26,7 +26,7 @@ it('Should show SearchResultItem when list is empty', () => {
   const { getByText } = render(
       <SearchResultList 
         loading={false} 
-        searchResultItems={[ new BookItem('My title', 'Me', 4) ]}/>
+        searchResultItems={[ new BookItem(0, 'My title', 'Me', 4) ]}/>
   )
   expect(getByText(/My title/i)).toBeTruthy()
   expect(getByText(/Me/i)).toBeTruthy()

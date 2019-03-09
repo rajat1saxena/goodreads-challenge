@@ -15,7 +15,7 @@ import BookItem from '../lib/BookItem.js';
 
 // This represents the initial state our app will be in 
 // when it is loaded for the very first time.
-const initialState = {
+export const initialState = {
     query: '',
     loadingSearch: false,
     loadingBookDetails: false,
@@ -25,13 +25,12 @@ const initialState = {
 
 // The reducer function
 export default function (state = initialState, action) {
-    // console.log(action)
     switch(action.type) {
         case QUERY_CHANGED:
-            return Object.assign({}, state, {query: action.newQuery})
+            return Object.assign({}, state, { query: action.newQuery })
             break
         case INITIATE_SEARCH:
-            return Object.assign({}, state, {loadingSearch: true})
+            return Object.assign({}, state, { loadingSearch: true })
             break
         case SEARCH_SUCCESS:
             const resultItems = []

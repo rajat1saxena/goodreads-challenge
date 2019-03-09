@@ -10,7 +10,7 @@ const SearchBox = ({ query, handleQueryChange, handleSearch }) => (
       placeholder="Search GoodReads.com books"
       value={query}
       onChange={ (e) => handleQueryChange(e.target.value) } />
-    <button type='submit' onClick={handleSearch}>Search</button>
+    <button type='submit' onClick={handleSearch} data-testid="submit">Search</button>
     <style jsx>{`
           .container {
             display: flex;
