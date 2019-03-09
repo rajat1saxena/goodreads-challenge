@@ -6,16 +6,17 @@ I created the following wireframe to decide on the key features of the prospecti
 ![](mockup.png)
 
 ### SETUP
-1. The project is based on `Next.js`.
+1. The project is based on [Next.js](https://nextjs.org/).
 2. The project follows `styled-css` methodology for styling, due to Next.js.
 3. All the major React components can be found under `components` folder.
 4. For state management, the project uses `Redux`. 
 5. All state management and data fetching logic can be found under `redux` folder.
 6. The UI is built using CSS3 Flexbox.
-7. The production site is hosted on Heroku. [Check it out](https://goodread-challenge.herokuapp.com/).
+7. The project uses Eslint for checking common linting errors.
+8. The production site is hosted on Heroku. [Check it out](https://goodread-challenge.herokuapp.com/).
 
 ### RUNNING AND DEBUGGING
-1. To start the development server
+1. To start the development server locally
 ```
 npm run dev
 ```
