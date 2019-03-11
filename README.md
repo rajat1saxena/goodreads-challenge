@@ -1,6 +1,9 @@
 ### INTRODUCTION
 A React app which can be used to see the detailed information about books from GoodReads.com.
 
+### REMOVED CORS-ANYWHERE.COM
+The app now uses its own Express API to mitigate CORS related issues. It is not dependent on any third party endpoint anymore.
+
 ### MOCKUP
 I created the following wireframe to decide on the key features of the prospective product.
 ![](mockup.png)
