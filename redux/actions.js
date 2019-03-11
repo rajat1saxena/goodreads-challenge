@@ -44,7 +44,6 @@ export function searchBooks() {
       try {
         const url = `${API_SEARCH_URL}/${getState().query}`
         const response = await fetchDataInJSON2(url)
-        console.log(response)
 
         dispatch(searchResultSuccess(response))
       } catch (err) {
