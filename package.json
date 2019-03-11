@@ -4,11 +4,11 @@
   "description": "A coding challenge",
   "main": "index.js",
   "scripts": {
-    "dev": "node server.js",
+    "dev": "PORT=8080 node server.js",
     "build": "next build",
     "start": "next build && NODE_ENV=production PORT=$PORT node server.js",
-    "test": "jest",
-    "lint": "eslint components lib pages server.js"
+    "test": "PORT=8080 jest",
+    "lint": "eslint components lib pages goodreadsrouter.js server.js"
   },
   "keywords": [],
   "author": "",

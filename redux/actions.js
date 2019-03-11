@@ -14,15 +14,12 @@ import {
     LOAD_BOOK_DETAILS_SUCCESS
 } from './actionTypes.js'
 import {
-  GR_API_KEY,
-  GR_SEARCH_URL,
-  CORS_ENABLE_URL,
-  GR_BOOK_DETAILS_URL
+  API_SEARCH_URL,
+  API_DETAILS_URL
 } from '../constants.js'
 import {
-  fetchDataInJSON
+  fetchDataInJSON2
 } from '../lib/utils.js'
-
 
 export function queryChanged(newQuery) {
     return { type: QUERY_CHANGED, newQuery: newQuery }
@@ -45,8 +42,9 @@ export function searchBooks() {
       dispatch(initiatizingSearch())
 
       try {
-        const url = `${CORS_ENABLE_URL}${GR_SEARCH_URL}?key=${GR_API_KEY}&q=${encodeURIComponent(getState().query)}`
-        const response = await fetchDataInJSON(url)
+        const url = `${API_SEARCH_URL}/${getState().query}`
+        const response = await fetchDataInJSON2(url)
+        console.log(response)
 
         dispatch(searchResultSuccess(response))
       } catch (err) {
@@ -72,8 +70,8 @@ export function bookSelected(id) {
       dispatch(initializingBookSearch())
 
       try {
-        const url = `${CORS_ENABLE_URL}${GR_BOOK_DETAILS_URL}?key=${GR_API_KEY}&id=${id}&text_only=true`
-        const response = await fetchDataInJSON(url)
+        const url = `${API_DETAILS_URL}/${id}`
+        const response = await fetchDataInJSON2(url)
 
         dispatch(bookSearchSuccess(response))
       } catch (err) {
